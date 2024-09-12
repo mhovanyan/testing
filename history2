@@ -1,0 +1,358 @@
+    1  ufw status
+    2  ufw allow 20/tcp
+    3  ufw allow 21/tcp
+    4  ufw allow 40000-50000/tcp
+    5  ufw allow 40000:50000/tcp
+    6  ufw allow OpenSSH
+    7  ufw enable
+    8  ufw status
+    9  ufw allow 990/tcp
+   10  ufw reload
+   11  vsftpd status
+   12  apt install vsftpd
+   13  vsftpd status
+   14  service vsftpd status
+   15  adduser ftpuser
+   16  rmuser ftpuser
+   17  userdel -r ftpuser
+   18  userdel  ftpuser
+   19  adduser ftptest
+   20  nano /etc/ssh/sshd_config
+   21  service sshd restart
+   22  systemclt service sshd restart
+   23  systemctl service sshd restart
+   24  systemctl service ssh restart
+   25  systemctl restart ssh.service
+   26  systemctl ssh status
+   27  systemctl status ssh
+   28  nano /etc/ssh/sshd_config
+   29  systemctl status ssh
+   30  systemctl restart ssh.service
+   31  systemctl status ssh
+   32  adduser ftptest
+   33  adduser ftptest2
+   34  cd /.
+   35  ls
+   36  cd /home/
+   37  ls
+   38  cd ./ftptest2
+   39  mkdir test
+   40  ls
+   41  sudo usermod -d /home/ftptest2/test ftptest2
+   42  ls -l
+   43  chown ftptest2 /home/ftptest2/test
+   44  ls -l
+   45  cd /home/ftptest/
+   46  ls
+   47  ls -l
+   48  cd /..
+   49  pwd
+   50  cd /home/ftptest2/
+   51  ls
+   52  apt-get update
+   53  apt install vsftpd
+   54  systemctl status vsftpd
+   55  ufw status
+   56  cd /etc/shadow
+   57  nano /etc/shadow
+   58  ftp ip-172-31-11-181
+   59  usermod -d /var/www ftptest2
+   60  cd /var/www
+   61  cd /var/www/
+   62  cd /var
+   63  ls
+   64  cd /home/ftptest2
+   65  ls
+   66  chown nobody:nogroup /home/ftptest2/test
+   67  chmod a-w /home/ftptest2/test/
+   68  ls -la
+   69  chown ftptest2:ftptest2 /home/ftptest2/test
+   70  ls -la
+   71  mv /etc/vsftpd.conf /etc/vsftpd.conf.bak
+   72  nano /etc/vsftpd.conf
+   73  systemctl restart vsftp
+   74  systemctl restart vsftpd
+   75  ufw status
+   76  passwd ftptest2
+   77  usermod -d /home/ftptest2/test/
+   78  usermod -d /home/ftptest2/test/ ftptest2
+   79  systemctl restart vsftpd
+   80  sudo nano /etc/vsftpd.conf
+   81  ls -la
+   82  chmod 755 test
+   83  systemctl restart vsftpd
+   84  exit
+   85  cd /home/ftptest2
+   86  ls -la
+   87  chmod a-w /home/ftptest2/test/
+   88  systemctl restart vsftpd
+   89  apt install httpd
+   90  apt install apache2
+   91  cd /var/www/
+   92  ls
+   93  usermod -d /var/www/html/ ftptest2
+   94  chown ftptest2:ftptest2 /var/www/html
+   95  mkdir /home/ftpuser/ftp
+   96  mkdir /home/ftptest2/ftp
+   97  chown nobody:nogroup /home/ftptest2/ftp
+   98  chmod a-w /home/ftptest2/ftp
+   99  mkdir /home/ftptest2/ftp/files
+  100  chown ftptest2:ftptest2 /home/ftptest2/ftp/files
+  101  systemctl restart vsftpd
+  102  ls -la
+  103  nano /etc/vsftpd.conf
+  104  usermod -s /sbin/nologin ftptest2
+  105  usermod man
+  106  cd /sbin/
+  107  ls -l
+  108  cat ./nologin 
+  109  cd /sbin/
+  110  cd /sbin/nologin 
+  111  nano nologin 
+  112  usermod -s /bin/bash ftptest2
+  113  nano /etc/vsftpd.conf
+  114  service vsftpd restart
+  115  cd /var/www/html/
+  116  ls
+  117  ifconfig
+  118  apt install net-tools
+  119  ifconfig
+  120  ls
+  121  nano /etc/vsftpd.conf
+  122  service vsftpd restart
+  123  nano /var/log/vsftpd.log 
+  124  nano /etc/sysconfig/iptables-config
+  125  nano /etc/vsftpd.conf
+  126  service vsftpd restart
+  127  nano /etc/vsftpd.conf
+  128  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+  129  nano /etc/vsftpd.conf
+  130  service vsftpd restart
+  131  nano /etc/vsftpd.conf
+  132  service vsftpd restart
+  133  cd /etc/ssl/private
+  134  ls
+  135  cp vsftpd.pem /var/www/html/
+  136  ls
+  137  cd /var/www/html/
+  138  ls
+  139  rm vsftpd.pem 
+  140  ls
+  141  nano /etc/vsftpd.conf
+  142  service vsftpd restart
+  143  nano /etc/vsftpd.conf
+  144  service vsftpd restart
+  145  nano /etc/vsftpd.conf
+  146  service vsftpd restart
+  147  nano /etc/vsftpd.conf
+  148  service vsftpd restart
+  149  nano /etc/vsftpd.conf
+  150  service vsftpd restart
+  151  nano /etc/vsftpd.conf
+  152  service vsftpd restart
+  153  nano /etc/vsftpd.conf
+  154  service vsftpd restart
+  155  nano /etc/vsftpd.conf
+  156  service vsftpd restart
+  157  nano /etc/vsftpd.conf
+  158  service vsftpd restart
+  159  nano /etc/vsftpd.conf
+  160  service vsftpd restart
+  161  nano /etc/vsftpd.conf
+  162  cd /var/www/html/
+  163  ls-l
+  164  ls -l
+  165  netstat
+  166  netstat -ln
+  167  netstat -tupln
+  168  ufw allow 20/tcp
+  169  ufw status
+  170  netstat -tupln
+  171  ufw disable
+  172  ufw status
+  173  ufw enable
+  174  nano /etc/vsftpd.conf
+  175  ufw allow 21/tcp
+  176  ufw allow 20/tcp
+  177  ufw status
+  178  service vsftpd restart
+  179  netsat -tup
+  180  netstat -tup
+  181  netstat -tuln
+  182  netstat -tup
+  183  nano /etc/vsftpd.conf
+  184  service vsftpd restart
+  185  cd /var/www/html/
+  186  ls -ls
+  187  nano /etc/vsftpd.conf
+  188  service vsftpd restart
+  189  nano /etc/vsftpd.conf
+  190  service vsftpd restart
+  191  git clone https://github.com/mhovanyan/testing.git
+  192  ls
+  193  cd ./testing/
+  194  ls
+  195  ls -la
+  196  git pull
+  197  ls -la
+  198  git pull
+  199  ls -la
+  200  cd /..
+  201  cd /home/ubuntu//testing/
+  202  ls
+  203  git pull
+  204  git clone https://github.com/mhovanyan/testing.git
+  205  ls
+  206  cd ./testing/
+  207  ls
+  208  get pull
+  209  git pull
+  210  cd /home/ubuntu/
+  211  ls
+  212  rm -r testing/
+  213  ls
+  214  git clone https://github.com/mhovanyan/testing.git
+  215  ls
+  216  cd ./testing/
+  217  ls
+  218  nano testfile 
+  219  git add .
+  220  git commit 'testfile'
+  221  git commit testfile
+  222  git commit -m  testfile
+  223  git config --global --edit
+  224  git push -m
+  225  git push 
+  226  git checkout -b ＜new-branch＞
+  227  ls
+  228  git checkout -b ＜new-branch＞ ＜existing-branch＞
+  229  git checkout -b ＜new-branch＞ <main>
+  230  git checkout -b <new-branch> <main>
+  231  git checkout -b new-branch main
+  232  ls
+  233  git branch New_branch
+  234  git push
+  235  git push  git push --set-upstream origin New_branch
+  236  git push  --set-upstream origin New_branch
+  237  git branch
+  238  git checkout -b New_branch main
+  239  git checkout  New_branch
+  240  ls
+  241  touch new_file
+  242  nano new_file 
+  243  git add .
+  244  git commit -m 
+  245  git commit  
+  246  git commit  'new_file'
+  247  git push
+  248  git checkout main
+  249  git pull origin main
+  250  mit merge New_branch
+  251  git merge New_branch
+  252  git push origin main
+  253  git clone https://github.com/mhovanyan/testing.gitgit clone https://github.com/mhovanyan/testing.git
+  254  ls
+  255  cd /root/
+  256  ls
+  257  cd /..
+  258  pwd
+  259  ls
+  260  cd /home/ubuntu/
+  261  ls
+  262  mkdir git
+  263  ls
+  264  cd ./git/
+  265  git clone https://github.com/mhovanyan/testing.gitgit clone https://github.com/mhovanyan/testing.git
+  266  ls
+  267  git clone https://github.com/mhovanyan/testing.git
+  268  touch test.txt
+  269  git add [test.txt]
+  270  git init
+  271  git add test.txt
+  272  gitommit -m "testing"
+  273  git commit -m "testing"
+  274  git push -u 
+  275  git push -u https://github.com/mhovanyan/testing.git
+  276  git push -u https://github.com/mhovanyan/testing.git main
+  277  git pull
+  278  ls
+  279  cd ./testing/
+  280  ls
+  281  git push -u 
+  282  git push
+  283  git push -u https://github.com/mhovanyan/testing.git master
+  284  ls
+  285  touch test.txt
+  286  nano test.txt 
+  287  git add [test.txt]
+  288  git add *
+  289  git commit -m "test message"
+  290  git push -all
+  291  y
+  292  git push --all
+  293  ls
+  294  git add test.txt
+  295  git commit -m "a"
+  296  git push
+  297  git remote set-url https://github.com/mhovanyan/testing.git
+  298  .git/config
+  299  sudo .git/config
+  300  .git/config
+  301  .git config
+  302  git config
+  303  git push
+  304  git remote set-url origin https://github.com/mhovanyan/testing.git
+  305  git push
+  306  git remote -v
+  307  git push
+  308  ls
+  309  git push
+  310  ls
+  311  git pull
+  312  ls
+  313  touch mikayel_hovanyan.txt
+  314  git add "mikayel_hovanyan.txt"
+  315  git commit -m "mikayel_hovanyan.txt"
+  316  git push 
+  317  git branch 2nd_branch
+  318  git push
+  319  git branch
+  320  git push --all
+  321  git checkout 2nd_branch
+  322  ls
+  323  git pull
+  324  ls
+  325  git pull --all
+  326  ls
+  327  git branch
+  328  git pull
+  329* 
+  330  git checkout master
+  331  git pull
+  332  ls
+  333  git checkout 2nd_branch
+  334  ls
+  335  git pull
+  336  git pull master 2nd_branch
+  337  git pull testing  2nd_branch
+  338  git pull http://www.github.com/mhovanyan/testing  2nd_branch
+  339  ls
+  340  git branch
+  341  history >> history1
+  342  ls
+  343  cat history1 
+  344  git add "history1"
+  345  git ommit -m "history1"
+  346  git commit -m "history"
+  347  git push
+  348  git push --set-upstream origin 2nd_branch
+  349  git push
+  350  ls
+  351  git checkpoint master
+  352  git checkout master
+  353  git merge 2nd_branch
+  354  git push 
+  355  git branch final_branch
+  356  git branch
+  357  git checkout final_branch
+  358  history >> history2
